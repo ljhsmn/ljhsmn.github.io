@@ -1,0 +1,29 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+    <deployment type="dockerfile">
+      <settings>
+        <option name="imageTag" value="jekyllpage" />
+        <option name="containerName" value="githubpage" />
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="4000" />
+              <option name="hostPort" value="14000" />
+            </DockerPortBindingImpl>
+          </list>
+        </option>
+        <option name="commandLineOptions" value="--add-host=host.docker.internal:host-gateway" />
+        <option name="sourceFilePath" value="Dockerfile" />
+        <option name="volumeBindings">
+          <list>
+            <DockerVolumeBindingImpl>
+              <option name="containerPath" value="/githubPage/" />
+              <option name="hostPath" value="G:\ljhsmn.github.io" />
+            </DockerVolumeBindingImpl>
+          </list>
+        </option>
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>
